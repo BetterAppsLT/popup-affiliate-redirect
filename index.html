@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const mref = params.get('mref');
+    const target = mref
+      ? 'https://apps.shopify.com/not-another-popup-upsell?mref=' + mref
+      : 'https://apps.shopify.com/not-another-popup-upsell';
+    window.location.replace(target);
+  </script>
+</head>
+<body>Redirecting...</body>
+</html>
